@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de inicio del Tablón de Anuncios</title>
+</head>
+<body>
+
+    <h1>Página de Inicio del Tablón de Anuncios</h1>
+
+    <ul>
+        {% for post in all_post_list %}
+            <li>{{ post.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
